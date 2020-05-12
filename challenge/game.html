@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <title>challenge</title>
+</head>
+<body>
+    <!-- Challenge 01: Your age in days -->
+    <div class="container-1">
+        <h2>Challenge 01: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="challenge01()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <!-- Challenge 02: Marvel Generator -->
+    <div class="conatiner-2">
+        <h2>Challenge 02: Marvel Generator</h2>
+        <button class="btn btn-success" onclick="marvelGenerator()" id="marvelGenerator">Generate Marvel</button>
+
+        <div class="flex-box-container-2" id="flex-marvel-container"></div>
+    </div>
+    <!-- Challenge 03: Rock, Paper and Sissors -->
+    <div class="container-3">
+        <h2>Challenge 03: Rock, Paper and Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="images/rock.jpg" alt="rock" id="rock" onclick="rpsGame(this)" alt="rock" width="150" height="150"/>
+            <img src="images/paper.png" alt="paper" id="paper" onclick="rpsGame(this)" alt="paper" width="150" height="150"/>
+            <img src="images/scissors.png" alt="scissors" id="scissors" onclick="rpsGame(this)" alt="scissors" width="150" height="150"/>
+        </div>
+    </div>
+
+    <!-- Challenge 04: Change the colour of the Buttons -->
+    <div class="container-4">
+        <h2 id="challenge-4Head">Challenge 04: Change the Color of All Buttons!</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option>select option</option>
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Youtube!</button>
+        </div>
+    </div>
+
+
+    <!-- script part -->
+    <script src="js/game.js"></script>
+
+</body>
+</html>

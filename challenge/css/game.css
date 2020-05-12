@@ -1,0 +1,47 @@
+/*Challenge 01: Your age in days*/
+.container-1,.conatiner-2, .container-3, .container-4{
+    border: 2px black solid;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+.flex-box-container-1,.flex-box-container-2,.flex-box-rps,.flex-box-pick-color{
+    display: flex;
+    border: 1px black solid;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-box-container-1 div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Challenge 02: Marvel Generator*/
+.flex-box-container-2 img{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    margin: 10px;
+} 
+
+/*Challenge 03: Rock, Paper and Sissors*/
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgba(57, 17, 202, 0.7);
+}
+
+/* Challenge 04: Change the colour of the Buttons */
+#background{
+    border-radius: 20px;
+    border:2.5px black solid;
+    transition: 0.5s;
+}
+
+#background:hover{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border:2.5px red solid;
+    transition: 0.5s;
+    
+}
+
