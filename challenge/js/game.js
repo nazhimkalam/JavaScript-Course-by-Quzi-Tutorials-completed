@@ -158,6 +158,36 @@ function greenOption(){
     }
 }
 
+//Challenge 05: Generate Marvel Character
+function generateMarvel(){
+    let marvelGifs = {
+        0 : 'images/marvelgif/antman.gif',
+        1 : 'images/marvelgif/blackpanther.gif',
+        2 : 'images/marvelgif/blackwidow.gif',
+        3 : 'images/marvelgif/captainamerica.gif',
+        4 : 'images/marvelgif/captainmarvel.gif',
+        5 : 'images/marvelgif/deadpool.gif',
+        6 : 'images/marvelgif/ghost.gif',
+        7 : 'images/marvelgif/hawkeye.gif',
+        8 : 'images/marvelgif/hulk.gif',
+        9 : 'images/marvelgif/ironman.gif',
+        10 : 'images/marvelgif/spiderman.gif',
+        11 : 'images/marvelgif/starlord.gif',
+        12 : 'images/marvelgif/strange.gif',
+        13 : 'images/marvelgif/thanos.gif',
+        14 : 'images/marvelgif/thor.gif',
+        15 : 'images/marvelgif/wolverine.gif',
+        16 : 'images/marvelgif/wonda.gif',
+    }
+    let randomMarvel = Math.floor(Math.random() * 17);
+    let image = document.createElement('img');
+    let div = document.getElementById('flex-box-challenge-05');
+    image.src = marvelGifs[randomMarvel];
+    image.height = 180;
+    image.width = 320;
+    div.appendChild(image);
+}
+
 
 
 
